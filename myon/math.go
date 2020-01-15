@@ -1,6 +1,6 @@
 package myon
 
-
+var INT_MAX_ = 2147483647
 func Add(_value1 int, _value2 int)int{
 		return _value1 + _value2
 }
@@ -16,7 +16,7 @@ func Mul(_value1 int, _value2 int)int{
 func Div(_value1 int, _value2 int)int{
 		if _value2 == 0{
 				// mathパッケージをimportすれば見れるけどそれだと意味ないのでとりあえず決め打ち
-				return 2147483647
+				return INT_MAX_
 		}
 		return _value1 / _value2
 }
